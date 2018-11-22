@@ -73,3 +73,15 @@ ex)
      [ ... ]
     ]
 ```
+
+### infer 최종 반환 출력 형식
+* 출력 형식 [ ( prob, output ), ( prob, output ), () ... ]
+* 참조 : https://github.com/naver/nlp-challenge/blob/master/missions/ner/main.py#L97
+```
+ex)
+    [
+     (0.0, ['NUM_B', '-', '-', '-']),
+     (0.0, ['PER_B', 'PER_I', 'CVL_B', 'NUM_B', '-', '-', '-', '-', '-', '-']),
+     ( ), ( )
+    ]
+```
